@@ -1,91 +1,49 @@
 ﻿@page "/"
+<div class="category-card">
+    <div class="header">
+        <i class="fa-solid fa-user"></i>
+   </div>
 
-<header>
-    <h1>Point of Sale System</h1>
-</header>
-<main>
-    <section class="product-list">
-        <h2>Products</h2>
-        <ul>
-            <li class="product">Product 1 - $10.99</li>
-            <li class="product">Product 2 - $7.99</li>
-            <li class="product">Product 3 - $5.99</li>
-            <!-- Add more products here -->
-        </ul>
-    </section>
-    <section class="cart">
-        <h2>Shopping Cart</h2>
-        <ul id="cart-items">
-            <!-- Cart items will be added dynamically -->
-        </ul>
-        <p>Total: $<span id="total-amount">0.00</span></p>
-    </section>
-</main>
-<footer>
-    <button id="checkout-button">Checkout</button>
-</footer>
+   <div class="footer">
+        <p>Suoup</p>
+        <p>10 Items</p>
+   </div>
+
+
+    
+</div>
+
+
+@code {
+
+}
 
 <style>
-    * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-    }
-
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #f5f5f5;
-    }
-
-    header {
-        text-align: center;
-        background-color: #333;
-        color: #fff;
-        padding: 10px 0;
-    }
-
-    main {
+    .category-card {
+        background-color: pink;
+        padding:10px;
+        height: 150px;
+        width: 150px; /* Adjust the width as needed */
         display: flex;
-        justify-content: space-between;
-        margin: 20px;
-    }
-
-    section {
-        background-color: #fff;
-        padding: 20px;
-        border: 1px solid #ddd;
+        flex-direction: column;
         border-radius: 5px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        width: 45%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        margin: 10px;
     }
 
-    ul {
-        list-style: none;
+    .header {
+        align-items: center;
+        padding: 10px;
     }
 
-    .product {
-        margin: 5px 0;
-        cursor: pointer;
+   
+
+    .footer {
+        margin-top:20px;
+        align-items: center;
+        margin-bottom:0;
     }
 
-    .cart {
-        max-height: 300px;
-        overflow-y: auto;
-    }
-
-    footer {
-        text-align: center;
-        margin: 20px 0;
-    }
-
-    button {
-        background-color: #333;
-        color: #fff;
-        border: none;
-        padding: 10px 20px;
-        cursor: pointer;
-        border-radius: 5px;
-        font-size: 18px;
-    }
+    
 
 </style>
