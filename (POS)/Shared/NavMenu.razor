@@ -1,31 +1,32 @@
-﻿<div class="top-row ps-3 navbar navbar-dark">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="">(POS)</a>
-        <button title="Navigation menu" class="navbar-toggler" @onclick="ToggleNavMenu">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+﻿<nav class="flex max-h-screen max-w-xs flex-col bg-gray-900 font-normal text-white">
+    <div class="my-2 text-center text-3xl font-bold">Ec-POS</div>
+    <div class="menu mx-2 text-lg">
+        <p class="mx-4 cursor-pointer rounded-md p-2 text-gray-400 hover:bg-gray-600 hover:bg-gray-700">Menu</p>
+        <p class="mx-4 cursor-pointer rounded-md p-2 text-gray-400 hover:bg-gray-600 hover:text-gray-200">Tables</p>
+        <p class="mx-4 cursor-pointer rounded-md p-2 text-gray-400 hover:bg-gray-600 hover:text-gray-200">Reservation</p>
+        <p class="mx-4 cursor-pointer rounded-md p-2 text-gray-400 hover:bg-gray-600 hover:text-gray-200">Chat</p>
+        <p class="mx-4 cursor-pointer rounded-md p-2 text-gray-400 hover:bg-gray-600 hover:text-gray-200">Dashbord</p>
+        <p class="mx-4 cursor-pointer rounded-md p-2 text-gray-400 hover:bg-gray-600 hover:text-gray-200">Account</p>
+        <p class="mx-4 cursor-pointer rounded-md p-2 text-gray-400 hover:bg-gray-600 hover:text-gray-200">Settings</p>
     </div>
-</div>
+    <div class="compte mt-20">
+        <div class="mx-2 my-1 flex w-28 cursor-pointer flex-row rounded-3xl border-2 border-gray-400 p-1 hover:bg-gray-700">
+            <p class="h-8 w-8 rounded-full bg-red-300 p-1 text-center text-sm">h</p>
+            <p class="mx-1 mt-1 w-auto text-center text-sm">hamza H.</p>
+        </div>
+        <div class="mx-2 my-1 flex w-36 cursor-pointer flex-row rounded-3xl border-2 border-gray-400 p-1 hover:bg-gray-700">
+            <p class="h-8 w-8 rounded-full bg-red-300 p-1 text-center text-sm">h</p>
+            <p class="mx-1 mt-1 text-center text-sm">hamza H.</p>
+        </div>
+        <div class="mx-2 my-1 flex w-36 cursor-pointer flex-row rounded-3xl border-2 border-gray-400 p-1 hover:bg-gray-700">
+            <p class="h-8 w-8 rounded-full bg-red-300 p-1 text-center text-sm">h</p>
+            <p class="mx-1 mt-1 text-center text-sm">hamza H.</p>
+        </div>
+    </div>
+</nav>
 
-<div class="@NavMenuCssClass" @onclick="ToggleNavMenu">
-    <nav class="flex-column">
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
-                <span class="oi oi-home" aria-hidden="true"></span> Home
-            </NavLink>
-        </div>
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="counter">
-                <span class="oi oi-plus" aria-hidden="true"></span> Counter
-            </NavLink>
-        </div>
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="fetchdata">
-                <span class="oi oi-list-rich" aria-hidden="true"></span> Fetch data
-            </NavLink>
-        </div>
-    </nav>
-</div>
+
+
 
 @code {
     private bool collapseNavMenu = true;
